@@ -1,0 +1,11 @@
+Git possède deux structures de données : une base d'objets et un cache de répertoires. Il existe cinq types d'objets :
+l'objet blob (pour binary large object désignant un ensemble de données brutes7), qui représente le contenu d'un fichier ;
+l'objet tree (mot anglais signifiant « arbre »), qui décrit une arborescence de fichier. 
+Il est constitué d'une liste d'objets de type blobs et des informations qui leur sont associées, tel que le nom du fichier et les permissions.
+Il peut contenir récursivement d'autres trees pour représenter les sous-répertoires ;
+l'objet commit (résultat de l'opération du même nom signifiant « valider une transaction »8), qui correspond à une arborescence de fichiers (tree) enrichie de métadonnées comme un message de description, le nom de l'auteur, etc. 
+Il pointe également vers un ou plusieurs objets commit parents pour former un graphe d'historiques7 ;
+l'objet tag (étiquette) qui est une manière de nommer arbitrairement un commit spécifique pour l'identifier plus facilement.
+Il est en général utilisé pour marquer certains commits, par exemple par un numéro ou un nom de version (2.1 ou bien Lucid Lynx).
+l'objet branch (branche) qui contient une partie de l'avancement du projet.
+Les branches sont souvent utilisées pour avancer dans une partie du projet sans impacter une autre partie.
